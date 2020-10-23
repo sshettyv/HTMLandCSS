@@ -157,17 +157,97 @@ table tbody tr:nth-child(odd) td{
 
 
 
+/*end Table Styles*/
 
+/*side bar*/
 
 .sidebar{
     width:34%;
     float:left;
-    background-color: aquamarine;
+    background-color: #e5e9dc ;
     padding: 20px 40px;
     box-sizing: border-box;
     font-size:85%;
 }
 
+/*Form Styling*/
+form{
+    background-color: #e5e9dc;
+    
+    
+}
+
+.hidden-label{
+    position: absolute;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+input,
+select{
+    font-family: tahoma,sans-serif;
+    font-size:100%;
+}
+
+input[type="email"],
+input[type="password"],
+select {
+    width:100%;
+    display:block;
+    box-sizing: border-box;
+    padding:4px;
+    font-family: tahoma,sans-serif;
+    font-size:100%;
+    margin-bottom: 5px;
+    border: 1px solid #cdcdcd;
+    outline:none;
+    
+}
+
+input[type="email"] :focus,
+input[type="password"] :focus{
+    
+    border: 1px solid #869960;
+    box-shadow: inset 1px 1px 1px rgba(0,0,0,.13);
+    
+}
+
+input[type="submit"]{
+    width:100%;
+    display:block;
+    box-sizing: border-box;
+    background-color: #869960;
+    color:#ffffff;
+    border: 1px solid #798A56;
+    margin-bottom: 5px;
+    
+}
+
+input[type="submit"]:hover,
+
+input[type="submit"]:focus{
+     
+    border:1px solid #535E3B; 
+    background-color: #798A56;
+     
+    
+}
+
+.checkbox-text{
+    font-size:85%;
+    color: #777;
+    
+}
+
+
+
+
+
+
+
+/*end Form Styling*/
 footer{
     text-align: center;
     font-size: 85%;
