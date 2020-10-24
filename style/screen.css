@@ -7,6 +7,8 @@ html{
 body{
     font-family: tahoma,sans-serif;
     font-size:87%;
+    margin:0;
+    padding:0;
 }
 
 /*Image*/
@@ -37,11 +39,12 @@ img{
 
 
 .container{
-    width:940px;
-    margin-left:auto;
-    margin-right:auto;
+     
+     
     background-color: #FFF;
     padding-left: 40px;
+     
+    
     
     padding-top:20px;
     box-sizing: border-box;
@@ -50,6 +53,20 @@ img{
     background-position: left bottom, left top;
     
     
+}
+
+.container{
+    width:940px;
+    margin-left:0;
+    margin-right:auto;
+    max-width: 940px;
+}
+.container-fixed{
+    max-width:940px;
+    margin:0 auto;
+    max-width: 940px;
+    padding-left:6px;
+    padding-right:6px;
 }
 
 /* Birds Background Demo */
@@ -67,7 +84,8 @@ header{
     padding-top:20px;    
     color: #617140;
     background-image: url("../images/flower.jpg");    
-    background-position: right center; 
+    background-position: right center;
+    background-size: cover; 
     background-repeat: no-repeat;
 }
 
@@ -85,6 +103,8 @@ header p{
 
 /*Site navigation*/
 .site-nav  {
+    
+
     margin-top: 20px;
     
 }
@@ -102,6 +122,7 @@ header p{
 }
 
 .site-nav a{
+    text-indent: 0px;
     display:block;
     text-decoration: none;
     color: #617140;
@@ -123,6 +144,9 @@ header p{
 .content-area{
     border-top:3px solid #e5e9dc;
     border-bottom: 3px solid #e5e9dc;
+    background-color: #869960 ;
+    background-image: linear-gradient(to bottom,#869960,#FFF);
+
 }
 
 .main-area h1{
@@ -243,7 +267,7 @@ table tbody tr:nth-child(odd) td{
     box-sizing: border-box;
     font-size:85%;
     background-color: #869960 ;
-    background-image: linear-gradient(to bottom,#869960,#FFF);
+    
     
 }
 
