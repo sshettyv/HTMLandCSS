@@ -42,15 +42,35 @@ img{
     margin-right:auto;
     background-color: #FFF;
     padding-left: 40px;
-	padding-right: 40px
+    
+    padding-top:20px;
     box-sizing: border-box;
+    background-image : url("../images/color-tile.png"),url("../images/color-tile.png");
+    background-repeat: repeat-x, repeat-x;
+    background-position: left bottom, left top;
+    
+    
+}
+
+/* Birds Background Demo */
+.birds {
+    background-color:rgb(0,0,0,.55);
+    background-image: url("../images/bird.jpg");
+    background-position: center;
+    background-size: cover; 
+	text-align: center;
+    padding: 100px 0;
+
 }
 
 header{
-    padding-top:20px;
-    
+    padding-top:20px;    
     color: #617140;
+    background-image: url("../images/flower.jpg");    
+    background-position: right center; 
+    background-repeat: no-repeat;
 }
+
 header h1 {
     margin:0;
     font-weight: normal;
@@ -61,6 +81,7 @@ header h1 {
 header p{
     margin:0;
 }
+
 
 /*Site navigation*/
 .site-nav  {
@@ -87,6 +108,7 @@ header p{
     padding:10px 20px;
     border:3px solid #e5e9dc;
     border-bottom: none;
+    background-color: white;
    
 }
 
@@ -120,10 +142,51 @@ header p{
     padding-right:40px;
     box-sizing: border-box;
 }
+ 
+/*UI menu Sprites*/
+
+.ui-menu ul{
+    margin:0;
+    padding:0;
+}
+
+.ui-menu li{
+    float:left;
+    list-style:none;
+    margin-right:10px;
+}
+
+.ui-menu a{
+
+    display:block;
+    width:50px;
+    height:50px;
+    background-image: url(../images/sprites.png);
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+
+}
+
+.ui-home a:hover {
+    background-position :  -50px 0;
+}
+
+.ui-profile a {
+    background-position : 0 -50px;
+}
+.ui-profile a:hover {
+    background-position : -50px -50px;
+}
+
+.ui-settings a {
+    background-position : 0 -100px;
+}
+.ui-settings a:hover{
+    background-position : -50px -100px;
+} 
 
 
-
-/*Table Styles*/
+/*END UI menu Sprites*/
 .col-item{
     width:60%;
     
@@ -175,11 +238,13 @@ table tbody tr:nth-child(odd) td{
 
 .sidebar{
     width:34%;
-    float:left;
-    background-color: #e5e9dc ;
+    float:left;   
     padding: 20px 40px;
     box-sizing: border-box;
     font-size:85%;
+    background-color: #869960 ;
+    background-image: linear-gradient(to bottom,#869960,#FFF);
+    
 }
 
 /*Form Styling*/
