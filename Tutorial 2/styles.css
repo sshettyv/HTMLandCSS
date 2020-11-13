@@ -1,0 +1,56 @@
+body, ul, li, h1, h2, a{
+    margin: 0;
+    padding: 0;
+    font-family: tahoma;
+  }
+p{
+    font-size: 18px;
+  }
+header{
+    background-color: red;
+    padding: 20px;
+    position:fixed;
+    width:100%;
+    z-index: 1;
+    top:0;
+    left:0;
+}
+
+header h1{
+    text-align: center;
+    
+
+}
+
+.banner{
+    position:relative;
+}
+.banner img{
+    max-width:100%;
+    }
+
+.banner h2{
+    padding:30px;
+    position:absolute;
+    top:50%;
+    left:0;
+}
+
+nav li{
+    width:25%;
+    display: inline-block;
+    font-size: 20px;
+}
+
+nav ul{
+    white-space: nowrap;
+}
+nav li a{
+    text-decoration: none;
+}
+
+main{
+    max-width:100%;
+    width:1200px;
+    margin: 80px auto;
+}
